@@ -1,5 +1,6 @@
 ---
 title: About Us
+layout: about
 ---
 
 ![What is SEO - search engine optimization](https://searchengineland.com/wp-content/seloads/2023/02/what-is-seo-search-engine-optimization-800x450.jpg.webp)

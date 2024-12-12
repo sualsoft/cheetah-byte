@@ -1,11 +1,20 @@
 {{define "main"}}
 <section class="py-16 md:py-24 mx-auto">
   <div class="container text-center mx-auto">
+    <ul class="flex gap-10 justify-center mb-10">
+      <li class="text-tiger-dark/[.6]">
+        <i class="fa-regular fa-user"></i> {{ .Params.author}}
+      </li>
+      <li class="text-tiger-dark/[.6]">
+        <i class="fa-regular fa-calendar-days"></i>
+        {{ .Date | time.Format "2 Jan 2006" }}
+      </li>
+    </ul>
     <div class="h2 text-3xl md:text-6xl font-bold">{{.Title}}</div>
   </div>
 </section>
 
-<section class="content pb-16 md:pb-24">
+<section class="content pb-16 md:pb-24 px-5">
   <div class="container mx-auto">
     <div class="blog max-w-3xl mx-auto">{{.Content}}</div>
   </div>
